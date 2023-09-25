@@ -1,0 +1,16 @@
+menu "AS5600 configuration manager"
+    config AS5600_ENABLE_BURN_ANGLE
+        bool "Enable burn angle command"
+        default n
+        help
+            Enables burn angle command. It is disabled by default.
+            Burning applies pernament changes to AS5600 sensor, before enabling it
+            please refer to documentation.
+    config AS5600_ENABLE_BURN_SETTINGS
+        bool "Enable burn settings command"
+        default n
+        help
+            Enables burn settings command. It is disabled by default.
+            Burning applies pernament changes to AS5600 sensor, before enabling it
+            please refer to documentation.
+endmenu
